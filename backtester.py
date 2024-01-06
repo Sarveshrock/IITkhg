@@ -2,12 +2,12 @@ import logging
 import os
 
 from backtesting import Strategy, Backtest
-from backtest.strategies import Strategies
+from backtest.stratergies import Strategies
 import pandas as pd
 
 import hydra
 from omegaconf import DictConfig
-from utils.reporter import Reporter
+from utils import Reporter
 from path_definition import HYDRA_PATH
 from data_loader.indicators import *
 import numpy as np
@@ -61,7 +61,7 @@ def add_signals(df):
     return df
 
 
-def add_indicators(df, cfg):
+def add_indicators(df, sma):
     df['sma_30'] = sma(np.array(df.Close), 30)
     df['sma_100'] = sma(np.array(df.Close), 30)
     exp1 = df.ewm(span=26, adjust=False).mean()

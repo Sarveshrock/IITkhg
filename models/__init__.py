@@ -1,6 +1,13 @@
 import matplotlib.pyplot as plt
-from Neural_Prophet import neural_prophet
-from neuralprophet import NeuralProphet
+from neural_prophet import Neural_Prophet
+from xgboost import MyXGboost
+from prophet import MyProphet
+from arima import MyARIMA
+from GRU import MyGRU
+from LSTM import MyLSTM
+from orbit import Orbit
+from sarimax import Sarimax
+from random_forest import RandomForest
 
 
 MODELS = {

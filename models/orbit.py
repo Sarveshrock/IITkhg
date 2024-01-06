@@ -1,4 +1,4 @@
-from orbit.models import DLT
+from orbit.orbit.models import DLT
 import numpy as np
 from sklearn.preprocessing import MaxAbsScaler
 import matplotlib as plt
