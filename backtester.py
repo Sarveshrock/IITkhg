@@ -1,13 +1,13 @@
 import logging
 import os
 
-from backtesting import Strategy, Backtest
+
 from backtest.stratergies import Strategies
 import pandas as pd
 
 import hydra
 from omegaconf import DictConfig
-from utils import Reporter
+#from utils import Reporter
 from path_definition import HYDRA_PATH
 from data_loader.indicators import *
 import numpy as np

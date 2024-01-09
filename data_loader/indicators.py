@@ -3,6 +3,9 @@ from math import fabs
 import numpy as np
 from numba import jit
 from numba import overload
+#from numba import jit, types
+#from numba.extending import overload, register_jitable
+#from numba.core.errors import TypingError
 
 
 def calculate_indicators(mean_, close_, open_, high_, low_, volume_):
